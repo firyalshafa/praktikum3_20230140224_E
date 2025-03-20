@@ -86,6 +86,10 @@ namespace praktikum3
                         cmd.Parameters.AddWithValue("@Alamat", txtAlamat.Text.Trim());
                         int rowsAffected = cmd.ExecuteNonQuery();
                         if (rowsAffected > 0)
+                        {
+                            MessageBox.Show("Data berhasil ditambahkan!", "Sukses", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                        }
                     }
 
                 }
