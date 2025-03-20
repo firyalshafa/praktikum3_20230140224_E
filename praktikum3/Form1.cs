@@ -112,6 +112,12 @@ namespace praktikum3
         private void btnUbah(object sender, EventArgs e)
         {
             using (SqlConnection conn = new SqlConnection(connectionString))
+            {
+                try
+                {
+                    if (txtNIM.Text == "" || txtNama.Text == "" || txtEmail.Text == "" || txtTelepon.Text == "" || txtAlamat.Text == "")
+                }
+            }
 
         }
 
