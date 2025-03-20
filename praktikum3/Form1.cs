@@ -132,7 +132,8 @@ namespace praktikum3
                             using (SqlCommand cmd = new SqlCommand(query, conn))
                             {
                                 cmd.Parameters.AddWithValue("@Nim", nim);
-
+                                int rowsAffected = cmd.ExecuteNonQuery();
+                                if (rowsAffected > 0)
                             }
                         }
                     }
