@@ -81,6 +81,7 @@ namespace praktikum3
                     {
                         cmd.Parameters.AddWithValue("@Nim", txtNim.Text.Trim());
                         cmd.Parameters.AddWithValue("@Nama", txtNama.Text.Trim());
+                        cmd.Parameters.AddWithValue("@Email", txtEmail.Text.Trim());
                     }
 
                 }
