@@ -128,6 +128,7 @@ namespace praktikum3
                         {
                             string nim = dgvMahasiswa.SelectedRows[0].Cells["Nim"].Value.ToString();
                             conn.Open();
+                            string query = "DELETE FROM Mahasiswa WHERE Nim = @Nim";
                         }
                     }
 
