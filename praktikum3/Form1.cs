@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -14,6 +15,10 @@ namespace praktikum3
     {
         // Ganti "SERVER" sesuai dengan SQL Server Anda
         private string connectionString = "Data Source=LAPTOP-SOF8NSPF\\FIRYAL;Initial Catalog=OrganisasiMahasiswa;Integrated Security=True";
+        public Form1()
+        {
+            InitializeComponent();
+        }
 
         // Event saat form pertama kali dimuat
         private void Form1_Load(object sender, EventArgs e)
@@ -33,10 +38,16 @@ namespace praktikum3
             // Fokus kembali ke NIM agar user siap memasukkan data baru
             txtNim.Focus();
         }
-        public Form1()
+
+        private void LoadData(object sender, DataGridViewCellEventArgs e)
         {
-            InitializeComponent();
+            using (SqlConnection conn = new SqlConnection(connectionString))
+            {
+
+            }
+
         }
+
 
         private void btnTambah(object sender, EventArgs e)
         {
@@ -63,9 +74,5 @@ namespace praktikum3
 
         }
 
-        private void LoadData(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
     }
 }
