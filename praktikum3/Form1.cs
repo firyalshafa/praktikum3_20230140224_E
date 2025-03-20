@@ -138,6 +138,10 @@ namespace praktikum3
                     LoadData();  // Memuat ulang data agar perubahan terlihat di DataGridView
                     ClearForm(); // Mengosongkan input setelah update data
                 }
+                else
+                {
+                    MessageBox.Show("Data tidak ditemukan atau gagal diperbarui!", "Kesalahan", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
             }
 
         }
