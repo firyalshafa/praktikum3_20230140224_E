@@ -47,6 +47,7 @@ namespace praktikum3
                 {
                     conn.Open();
                     string query = "SELECT Nim AS [Nim], Nama, Email, Telepon, Alamat FROM Mahasiswa";
+                    SqlDataAdapter da = new SqlDataAdapter(query, conn);
 
                 }
             }
