@@ -24,7 +24,14 @@ namespace praktikum3
         // Fungsi untuk mengosongkan semua input pada TextBox
         private void ClearForm()
         {
+            txtNim.Clear();
+            txtNama.Clear();
+            txtEmail.Clear();
+            txtTelepon.Clear();
+            txtAlamat.Clear();
 
+            // Fokus kembali ke NIM agar user siap memasukkan data baru
+            txtNim.Focus();
         }
         public Form1()
         {
