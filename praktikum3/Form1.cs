@@ -131,6 +131,7 @@ namespace praktikum3
                             string query = "DELETE FROM Mahasiswa WHERE Nim = @Nim";
                             using (SqlCommand cmd = new SqlCommand(query, conn))
                             {
+                                cmd.Parameters.AddWithValue("@Nim", nim);
 
                             }
                         }
