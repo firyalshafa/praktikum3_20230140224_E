@@ -109,13 +109,13 @@ namespace praktikum3
 
         }
 
-        private void btnHapus(object sender, EventArgs e)
+        private void btnUbah(object sender, EventArgs e)
         {
 
 
         }
 
-        private void btnUbah(object sender, EventArgs e)
+        private void btnHapus(object sender, EventArgs e)
         {
             if (dgvMahasiswa.SelectedRows.Count > 0)
             {
@@ -126,7 +126,8 @@ namespace praktikum3
                     {
                         try
                         {
-                            string nim = dgvMahasiswa.SelectedRows[0].Cells["NIM"].Value.ToString();
+                            string nim = dgvMahasiswa.SelectedRows[0].Cells["Nim"].Value.ToString();
+                            
                         }
                     }
 
