@@ -46,6 +46,7 @@ namespace praktikum3
                 try
                 {
                     conn.Open();
+                    string query = "SELECT Nim AS [Nim], Nama, Email, Telepon, Alamat FROM Mahasiswa";
 
                 }
             }
