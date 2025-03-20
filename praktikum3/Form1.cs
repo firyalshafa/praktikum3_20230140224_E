@@ -166,6 +166,7 @@ namespace praktikum3
 
         private void btnRefresh(object sender, EventArgs e)
         {
+            LoadData();
 
         }
 
