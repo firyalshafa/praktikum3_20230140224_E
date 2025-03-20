@@ -175,6 +175,10 @@ namespace praktikum3
 
         private void dgvMahasiswa(object sender, DataGridViewCellEventArgs e)
         {
+        if (e.RowIndex >= 0)
+        {
+
+        }
 
         }
 
