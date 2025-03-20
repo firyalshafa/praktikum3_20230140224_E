@@ -64,9 +64,12 @@ namespace praktikum3
 
         }
 
-
         private void btnTambah(object sender, EventArgs e)
         {
+            using (SqlConnection conn = new SqlConnection(connectionString))
+            {
+
+            }
 
         }
 
