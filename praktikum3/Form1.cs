@@ -184,6 +184,7 @@ namespace praktikum3
             txtNama.Text = row.Cells[1].Value?.ToString();
             txtEmail.Text = row.Cells[2].Value?.ToString();
             txtTelepon.Text = row.Cells[3].Value?.ToString();
+            txtAlamat.Text = row.Cells[4].Value?.ToString();
 
         }
 
