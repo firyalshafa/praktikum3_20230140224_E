@@ -68,6 +68,13 @@ namespace praktikum3
         {
             using (SqlConnection conn = new SqlConnection(connectionString))
             {
+                try
+                {
+                    if (txtNim.Text == "" || txtNama.Text == "" || txtEmail.Text == "" || txtTelepon.Text == "")
+                    {
+
+                    }
+                }
 
             }
 
