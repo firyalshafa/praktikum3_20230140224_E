@@ -43,7 +43,11 @@ namespace praktikum3
         {
             using (SqlConnection conn = new SqlConnection(connectionString))
             {
+                try
+                {
+                    conn.Open();
 
+                }
             }
 
         }
