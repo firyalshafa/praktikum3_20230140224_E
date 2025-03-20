@@ -125,6 +125,11 @@ namespace praktikum3
                     string query = "UPDATE Mahasiswa SET Nama = @Nama, Email = @Email, Telepon = @Telepon, Alamat = @Alamat WHERE NIM = @NIM";
                     using (SqlCommand cmd = new SqlCommand(query, conn))
                 }
+                cmd.Parameters.AddWithValue("@NIM", txtNIM.Text.Trim());        // Parameter untuk NIM
+                cmd.Parameters.AddWithValue("@Nama", txtNama.Text.Trim());      // Parameter untuk Nama
+                cmd.Parameters.AddWithValue("@Email", txtEmail.Text.Trim());    // Parameter untuk Email
+                cmd.Parameters.AddWithValue("@Telepon", txtTelepon.Text.Trim());// Parameter untuk Telepon
+                cmd.Parameters.AddWithValue("@Alamat", txtAlamat.Text.Trim());  // Parameter untuk Alamat
             }
 
         }
