@@ -139,6 +139,10 @@ namespace praktikum3
                                     LoadData();
                                     ClearForm(); // Auto Clear setelah hapus data
                                 }
+                                else
+                                {
+                                    MessageBox.Show("Data tidak ditemukan atau gagal dihapus!", "Kesalahan", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                                }
                             }
                         }
                     }
