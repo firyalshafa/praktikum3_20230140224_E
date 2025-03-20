@@ -132,6 +132,12 @@ namespace praktikum3
                 cmd.Parameters.AddWithValue("@Alamat", txtAlamat.Text.Trim());  // Parameter untuk Alamat
 
                 int rowsAffected = cmd.ExecuteNonQuery();
+                if (rowsAffected > 0)
+                {
+                    MessageBox.Show("Data berhasil diperbarui!", "Sukses", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    LoadData();  // Memuat ulang data agar perubahan terlihat di DataGridView
+                    ClearForm(); // Mengosongkan input setelah update data
+                }
             }
 
         }
