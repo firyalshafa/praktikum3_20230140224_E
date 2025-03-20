@@ -121,6 +121,7 @@ namespace praktikum3
                         return;
 
                     }
+                    conn.Open();
                 }
             }
 
