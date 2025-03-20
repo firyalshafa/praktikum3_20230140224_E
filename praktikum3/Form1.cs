@@ -112,10 +112,15 @@ namespace praktikum3
         private void btnHapus(object sender, EventArgs e)
         {
 
+
         }
 
         private void btnUbah(object sender, EventArgs e)
         {
+            if (dgvMahasiswa.SelectedRows.Count > 0)
+            {
+
+            }
 
         }
 
