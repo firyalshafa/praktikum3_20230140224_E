@@ -12,6 +12,8 @@ namespace praktikum3
 {
     public partial class Form1 : Form
     {
+        // Ganti "SERVER" sesuai dengan SQL Server Anda
+        private string connectionString = "Data Source=LAPTOP-SOF8NSPF\\FIRYAL;Initial Catalog=OrganisasiMahasiswa;Integrated Security=True";
 
         public Form1()
         {
