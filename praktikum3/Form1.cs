@@ -130,6 +130,8 @@ namespace praktikum3
                 cmd.Parameters.AddWithValue("@Email", txtEmail.Text.Trim());    // Parameter untuk Email
                 cmd.Parameters.AddWithValue("@Telepon", txtTelepon.Text.Trim());// Parameter untuk Telepon
                 cmd.Parameters.AddWithValue("@Alamat", txtAlamat.Text.Trim());  // Parameter untuk Alamat
+
+                int rowsAffected = cmd.ExecuteNonQuery();
             }
 
         }
