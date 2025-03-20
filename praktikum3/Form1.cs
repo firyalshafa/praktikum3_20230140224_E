@@ -144,6 +144,12 @@ namespace praktikum3
                 }
             }
 
+             catch (Exception ex)
+        {
+                // Menampilkan pesan error jika terjadi kesalahan saat update data
+                MessageBox.Show("Error: " + ex.Message, "Kesalahan", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
         }
 
         private void btnHapus(object sender, EventArgs e)
