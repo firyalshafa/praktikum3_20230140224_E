@@ -21,6 +21,11 @@ namespace praktikum3
             LoadData();
         }
 
+        // Fungsi untuk mengosongkan semua input pada TextBox
+        private void ClearForm()
+        {
+
+        }
         public Form1()
         {
             InitializeComponent();
