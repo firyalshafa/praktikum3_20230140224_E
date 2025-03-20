@@ -179,6 +179,8 @@ namespace praktikum3
         {
             DataGridViewRow row = dgvMahasiswa.Rows[e.RowIndex];
 
+            // Coba gunakan indeks jika "NIM" tidak ditemukan
+            txtNim.Text = row.Cells[0].Value.ToString();
         }
 
         }
