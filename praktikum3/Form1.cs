@@ -111,7 +111,7 @@ namespace praktikum3
 
         private void btnUbah(object sender, EventArgs e)
         {
-
+            using (SqlConnection conn = new SqlConnection(connectionString))
 
         }
 
