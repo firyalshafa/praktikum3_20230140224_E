@@ -145,6 +145,10 @@ namespace praktikum3
                                 }
                             }
                         }
+                        catch (Exception ex)
+                        {
+
+                        }
                     }
 
                 }
