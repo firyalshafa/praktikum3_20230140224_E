@@ -127,7 +127,7 @@ namespace praktikum3
                         try
                         {
                             string nim = dgvMahasiswa.SelectedRows[0].Cells["Nim"].Value.ToString();
-                            
+                            conn.Open();
                         }
                     }
 
