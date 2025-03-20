@@ -15,6 +15,12 @@ namespace praktikum3
         // Ganti "SERVER" sesuai dengan SQL Server Anda
         private string connectionString = "Data Source=LAPTOP-SOF8NSPF\\FIRYAL;Initial Catalog=OrganisasiMahasiswa;Integrated Security=True";
 
+        // Event saat form pertama kali dimuat
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            LoadData();
+        }
+
         public Form1()
         {
             InitializeComponent();
@@ -41,6 +47,11 @@ namespace praktikum3
         }
 
         private void dgvMahasiswa(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void LoadData(object sender, DataGridViewCellEventArgs e)
         {
 
         }

@@ -184,6 +184,7 @@
             this.dgvMahasiswa.Size = new System.Drawing.Size(664, 150);
             this.dgvMahasiswa.TabIndex = 14;
             this.dgvMahasiswa.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvMahasiswa);
+            this.dgvMahasiswa.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.LoadData);
             // 
             // Form1
             // 
