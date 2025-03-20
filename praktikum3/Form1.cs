@@ -134,6 +134,11 @@ namespace praktikum3
                                 cmd.Parameters.AddWithValue("@Nim", nim);
                                 int rowsAffected = cmd.ExecuteNonQuery();
                                 if (rowsAffected > 0)
+                                {
+                                    MessageBox.Show("Data berhasil dihapus!", "Sukses", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                                    LoadData();
+                                    ClearForm(); // Auto Clear setelah hapus data
+                                }
                             }
                         }
                     }
